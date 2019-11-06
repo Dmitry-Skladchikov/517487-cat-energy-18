@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Складчиков](https://up.htmlacademy.ru/adaptive/18/user/517487).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Карпов].
 
 ---
 
