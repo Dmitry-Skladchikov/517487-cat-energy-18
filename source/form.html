@@ -20,46 +20,168 @@
   			</nav>
   		</div>
   	</header>
-
-  	<main></main>
-
+  	<main>
+      <section class="programSelection">
+        <div class="programSelection__wrapper">
+          <div class="programmSelection__description">
+            <h1 class="programSelection__title">Подбор программы</h1>
+            <p class="programSelection__text">ЗАПОЛНИТЕ АНКЕТУ И МЫ ПОДБЕРЕМ ПРОГРАММУ ПИТАНИЯ ДЛЯ ВАШЕГО КОТА</p>
+          </div>
+          <form class="programSelection__form" action="http://echo.htmlacademy.ru" method="post">
+            <section class="form-element form-element__cat-data">
+              <ul class="form-element__list">
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <span class="form-element__name">ИМЯ:*</span>
+                    <input type="text" class="form-element__input" name="Имя кота" placeholder="Барсик" required>
+                  </label>
+                </li>
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <span class="form-element__name">ВЕС (КГ):*</span>
+                    <input type="text" class="form-element__input" name="Вес кота" placeholder="7" required>
+                  </label>
+                </li>
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <span class="form-element__name">ВОЗРАСТ (ЛЕТ):*</span>
+                    <input type="text" class="form-element__input" name="Возраст кота" placeholder="7" required>
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section class="form-element form-element__program-type"> 
+              <ul class="form-element__list">
+                <li class="form-elemen__item">
+                  <label class="form-element__label">
+                    <input type="radio" class="form-element__radio" name="вид программы" value="похудение" checked>
+                    <span class="form-element__name">ПОХУДЕНИЕ</span>
+                  </label>
+                </li>
+                <li class="form-elemen__item">
+                  <label class="form-element__label">
+                    <input type="radio" class="form-element__radio" name="вид программы" value="набор массы">
+                    <span class="form-element__name">НАБОР МАССЫ</span>
+                  </label>
+                </li>
+                <li class="form-elemen__item">
+                  <label class="form-element__label">
+                    <input type="radio" class="form-element__radio" name="вид программы" value="не знаю (нужен ваш совет)">
+                    <span class="form-element__name">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section class="form-element form-element__contucts">
+              <h2 class="form-element__title">Контактные данные (владельца кота)</h2>
+              <ul class="form-element__list">
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <span class="form-element__name">E-MAIL:*</span>
+                    <input type="email" class="form-element__input" name="E-mail" placeholder="kuklachev@gmail.com" required>
+                  </label>
+                </li>
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <span class="form-element__name">ТЕЛЕФОН:*</span>
+                    <input type="tel" class="form-element__input" name="Номер телефона" placeholder="8 (960) 900-60-90" required>
+                  </label>
+                </li>
+              </ul>
+            </section>
+          
+            <section class="form-element form-element__textarea">
+              <h2 class="form-element__title">Комментарий</h2>
+              <textarea name="Комментарий" cols="30" rows="10" class="form-element__comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+            </section>
+            <section class="form-element form-element__additionally">
+              <h2 class="form-element__title">Дополнительно</h2>
+              <ul class="form-element__list">
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <input type="checkbox" class="form-element__input" name="Сахарозаменитель" checked>
+                    <span class="form-element__name">САХАРОЗАМЕНИТЕЛЬ</span>
+                  </label>
+                </li>
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <input type="checkbox" class="form-element__input" name="Питьевая вода">
+                    <span class="form-element__name">ПИТЬЕВАЯ ВОДА</span>
+                  </label>
+                </li>
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <input type="checkbox" class="form-element__input" name="Молоко">
+                    <span class="form-element__name">МОЛОКО</span>
+                  </label>
+                </li>
+                <li class="form-element__item">
+                  <label class="form-element__label">
+                    <input type="checkbox" class="form-element__input" name="Витамины">
+                    <span class="form-element__name">ВИТАМИНЫ</span>
+                  </label>
+                </li>
+              </ul>
+            </section>  
+            <section class="form-element form-element__submit">
+              <button type="submit" class="form-submit btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+              <p class="form-note">
+                <sup>*</sup> - Обязательные поля
+              </p>
+            </section>
+          </form>
+        </div>
+      </section>
+    </main>
   	<footer class="page-footer">
-  		<div class="page-footer__item page-footer__logo">
-  			<a href="#" class="page-logo page-logo--header">
-  				<svg class="page-logo__text page-logo__text--footer" xmlns="http://www.w3.org/2000/svg" width="#" height="#"></svg>
-  			</a>
-  		</div>
-  		<section class="page-footer__item social">
-  			<h2 class="visually-hidden">Наши социальные сети.</h2>
-  			<ul class="social__list">
-  				<li class="social__item">
-  					<a href="#" class="social__link social__link--vk">
-  						Вконтакте
-  						<svg></svg>
-  					</a>
-  				</li>
-  				<li class="social__item">
-  					<a href="#" class="social__link social__link--ig">
-  						Инстаграмм
-  						<svg></svg>
-  					</a
-  					></li>
-  				<li class="social__item">
-  					<a href="#" class="social__link social__link--fb">
-  						Фейсбук
-  						<svg></svg>
-  					</a>
-  				</li>
-  			</ul>
-  		</section>
-  		<section class="page-footer__item copyright">
- 				<a class="copyright__link copyright__link--name" href="https://htmlacademy.ru">
- 					<span>HTML Academy</span>
- 				</a>
-				<a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru">
- 					<svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="#" height="#"></svg>
- 				</a>
- 			</section>
+      <div class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__content">
+            <p class="contacts__invitation contacts__half">ПРИГЛАШАЕМ К СОТРУДНЕЧЕСТВУ ДИЛЕРОВ!</p>
+            <address class="contacts__half contacts__half--address">
+              <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </address>
+          </div>
+        </div>
+        <div class="contants__map"></div>
+      </div>
+      <div class="page-footer__item page-footer__logo">
+        <a href="#" class="page-logo page-logo--header">
+          <svg class="page-logo__text page-logo__text--footer" xmlns="http://www.w3.org/2000/svg" width="#" height="#"></svg>
+        </a>
+      </div>
+      <section class="page-footer__item social">
+        <h2 class="visually-hidden">Наши социальные сети.</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              Вконтакте
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--ig">
+              Инстаграмм
+              <svg></svg>
+            </a
+            ></li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb">
+              Фейсбук
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__item copyright">
+        <a class="copyright__link copyright__link--name" href="https://htmlacademy.ru">
+          <span>HTML Academy</span>
+        </a>
+        <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru">
+          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="#" height="#"></svg>
+        </a>
+      </section>
+    </footer>
   	</footer>
   </body>
 </html>
