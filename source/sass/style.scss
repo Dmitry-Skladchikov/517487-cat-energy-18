@@ -1,4 +1,57 @@
-@import "page-header.scss";
-@import "page-logo.scss";
-@import "main-nav.scss";
-@import "promo.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+        url("../fonts/oswaldmedium.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/oswaldregular.woff2") format("woff2"),
+        url("../fonts/oswaldregular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    outline: 1px solid green;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.main-wrapper {
+    outline: 1px solid red;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: table-cell;
+    width: 280px;
+    height: 40px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #68b738;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0)  
+}
