@@ -7,3 +7,17 @@
 .catalog__item {
     border-bottom: 1px solid rgb(217, 217, 217);
 }
+
+.catalog__title {
+    box-sizing: border-box;
+    padding: 0;
+    padding: 15px 0 25px 20px;
+    margin: 0;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 60px;
+    color: #111111;
+    border-top: 1px solid rgb(217, 217, 217);
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
