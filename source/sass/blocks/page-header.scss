@@ -1,4 +1,14 @@
 .page-header__wrapper {
-    padding-top: 11px;
-    padding-bottom: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    min-height: 65px;
+}
+
+.page-header__btn {
+    width: 25px;
+    height: 19px;
+    margin-left: auto;
+    background-image: url(../../img/icon-mobile-menu.svg);
 }
