@@ -8,6 +8,8 @@
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
 @import "blocks/show-more.scss";
+@import "blocks/example.scss";
+@import "blocks/achievements.scss";
 
 @font-face {
     font-family: "Oswald";
@@ -33,7 +35,7 @@ body {
 }
 
 .main-wrapper {
-    //outline: 1px solid red;
+    outline: 1px solid red;
     width: 280px;
     margin: 0 auto;
 }
